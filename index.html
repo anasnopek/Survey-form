@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter your Name: <input id="name" name="name" type="text"
+                    placeholder="enter your name" value="" required /></label>
+            <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" name="mail"
+                    placeholder="enter your email" value="" required /></label>
+            <label for="age" id="number-label">Input your age (years): <input id="number" type="number" min="18"
+                    max="120" placeholder="enter your age" value="" name="age" /></label>
+        </fieldset>
+        <fieldset>
+            <label for="personal-account"><input class="inline" id="personal-account" type="radio" name="account-type"
+                    value="personal" /> Personal
+                Account</label>
+            <label for="business-account"><input class="inline" id="business-account" type="radio" name="account-type"
+                    value="business" /> Business
+                Account</label>
+            <label for="terms-and-conditions">
+                <input class="inline" id="terms-and-conditions" type="checkbox" name="terms"
+                    value="terms-and-conditions" required /> I accept the <a
+                    href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <label for="Suscription">
+                <input class="inline" id="suscription" type="checkbox" name="terms" value="suscriptio" required />I
+                agree to receive news</label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown"> What are you looking for?
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Products on sale</option>
+                    <option value="2">New products</option>
+                    <option value="3">Featured Products</option>
+
+                </select>
+            </label>
+            <label>
+                <textarea name="comments" placeholder="Enter your comments"></textarea>
+            </label>
+
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+</body>
+
+</html>
